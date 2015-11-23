@@ -56,7 +56,7 @@ $scope.showItem = function (item) {
 }
 
 $scope.deleteItem = function (item) {
-    if (confirm('Are you sure you want to delete?')) {
+    if (confirm("<?= Yii::t('rbac-admin','Are you sure you want to delete?')?>")) {
         Rule.remove({id: item.name}, {}, function () {
             addAlert('info', 'Rule deleted');
             query();

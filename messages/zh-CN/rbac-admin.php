@@ -67,4 +67,13 @@ return [
     'Application' => '应用',
     'RBAC Manager' => '权限管理',
     'search' => '搜索...',
+    'item(s) revoked' => '项撤销指定成功',
+    'item(s) assigned' => '项指定成功',
+    'New permission added' => '新权限添加成功',
+    'Are you sure you want to delete' => '确定删除？',
+    'Permission deleted' => '权限已删除',
+    'Children' => '子元素',
+    'Save success' => '保存成功',
+    'New role added' => '新角色已添加',
+    'Role deleted' => '角色已删除',
 ];

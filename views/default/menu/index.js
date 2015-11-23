@@ -45,7 +45,7 @@ $scope.openModal = function (model) {
 }
 
 $scope.deleteItem = function (item) {
-    if (confirm('Are you sure you want to delete?')) {
+    if (confirm("<?= Yii::t('rbac-admin','Are you sure you want to delete?')?>")) {
         Menu.remove({id: item.id}, {}, function () {
             addAlert('info', 'Menu deleted');
             query();

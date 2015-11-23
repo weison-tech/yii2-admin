@@ -39,15 +39,15 @@ $scope.openModal = function () {
             }
         }
     })).result.then(function () {
-        addAlert('info', 'New role added');
+        addAlert('info', "<?= Yii::t('rbac-admin', 'New role added')?>");
         query();
     });
 }
 
 $scope.deleteItem = function (item) {
-    if (confirm('Are you sure you want to delete?')) {
+    if (confirm("<?= Yii::t('rbac-admin','Are you sure you want to delete?')?>")) {
         Item.remove({id: item.name}, {}, function () {
-            addAlert('info', 'Role deleted');
+            addAlert('info', "<?= Yii::t('rbac-admin', 'Role deleted')?>");
         }, function (r) {
             addAlert('error', r.statusText);
         });

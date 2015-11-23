@@ -145,7 +145,7 @@ $scope.clickRevoke = function () {
         };
         Item.revoke({id: $scope.paramId}, post,
             function (r) {
-                addAlert('info', r.count + ' item(s) revoked');
+                addAlert('info', r.count + "<?= Yii::t('rbac-admin', 'item(s) revoked')?>");
                 query();
             },
             function (r) {
@@ -164,7 +164,7 @@ $scope.clickAssign = function () {
         };
         Item.assign({id: $scope.paramId}, post,
             function (r) {
-                addAlert('info', r.count + ' item(s) assigned');
+                addAlert('info', r.count + "<?= Yii::t('rbac-admin', 'item(s) assigned')?>");
                 query();
             },
             function (r) {
@@ -185,7 +185,7 @@ $scope.clickEdit = function () {
 }
 
 $scope.clickDelete = function () {
-    if (confirm('Are you sure you want to delete?')) {
+    if (confirm("<?= Yii::t('rbac-admin','Are you sure you want to delete?')?>")) {
         Item.remove({id: $scope.paramId}, {}, function () {
             $location.path('/role');
         }, function (r) {
@@ -204,7 +204,7 @@ $scope.clickSave = function () {
             }
             $scope.isEdit = false;
             $scope.modelError = {};
-            addAlert('info', 'Save success');
+            addAlert('info', "<?= Yii::t('rbac-admin', 'Save success')?>");
         }, function (r) {
         if (r.status == 422) {
             angular.forEach(r.data, function (err) {

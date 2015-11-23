@@ -142,7 +142,7 @@ $scope.clickRevoke = function () {
         };
         Assignment.revoke({id: $scope.paramId}, post,
             function (r) {
-                addAlert('info', r.count + ' item(s) revoked');
+                addAlert('info', r.count + "<?= Yii::t('rbac-admin', 'item(s) revoked')?>");
                 query();
             },
             function (r) {
@@ -161,7 +161,7 @@ $scope.clickAssign = function () {
         };
         Assignment.assign({id: $scope.paramId}, post,
             function (r) {
-                addAlert('info', r.count + ' item(s) assigned');
+                addAlert('info', r.count + "<?= Yii::t('rbac-admin', 'item(s) assigned')?>");
                 query();
             },
             function (r) {

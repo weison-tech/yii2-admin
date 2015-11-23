@@ -39,15 +39,15 @@ $scope.openModal = function () {
             }
         }
     })).result.then(function () {
-        addAlert('info', 'New permission added');
+        addAlert('info', "<?= Yii::t('rbac-admin', 'New permission added')?>");
         query();
     });
 }
 
 $scope.deleteItem = function (item) {
-    if (confirm('Are you sure you want to delete?')) {
+    if (confirm("<?= Yii::t('rbac-admin','Are you sure you want to delete?')?>")) {
         Item.remove({id: item.name}, {}, function () {
-            addAlert('info', 'Permission deleted');
+            addAlert('info', "<?= Yii::t('rbac-admin','Permission deleted')?>");
         }, function (r) {
             addAlert('error', r.statusText);
         });
