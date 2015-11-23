@@ -114,7 +114,7 @@ $this->title= Yii::t('rbac-admin', 'RBAC Manager');
                 '/permission' => Yii::t('rbac-admin', 'Permission'),
                 '/rule' => Yii::t('rbac-admin', 'Rule'),
                 '/route' => Yii::t('rbac-admin', 'Route'),
-                '/menu' => Yii::t('rbac-admin', 'Menu'),
+                // '/menu' => Yii::t('rbac-admin', 'Menu'),
             ],
         ]
     ]);

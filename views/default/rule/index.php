@@ -18,7 +18,7 @@ use dee\angular\NgView;
                     <td width="30px"></td>
                     <td width="300px">
                         <div class="has-feedback">
-                            <input type="text" class="form-control input-sm" placeholder="Search" ng-model="q"
+                            <input type="text" class="form-control input-sm" placeholder="<?= Yii::t('rbac-admin', 'search')?>" ng-model="q"
                                    ng-change="filter()">
                             <span class="glyphicon glyphicon-search form-control-feedback"></span>
                         </div>

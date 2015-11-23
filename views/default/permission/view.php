@@ -77,7 +77,7 @@ use dee\angular\NgView;
                 <div class="box-tools pull-right">
                     <div class="has-feedback">
                         <input type="text" class="form-control input-sm"
-                               ng-model="q1" placeholder="Search..."
+                               ng-model="q1" placeholder="<?= Yii::t('rbac-admin', 'search')?>"
                                ng-change="applyFilter1()">
                         <span class="glyphicon glyphicon-search form-control-feedback"></span>
                     </div>
@@ -128,7 +128,7 @@ use dee\angular\NgView;
                 <div class="box-tools pull-right">
                     <div class="has-feedback">
                         <input type="text" class="form-control input-sm"
-                               ng-model="q2" placeholder="Search..."
+                               ng-model="q2" placeholder="<?= Yii::t('rbac-admin', 'search')?>"
                                ng-change="applyFilter2()">
                         <span class="glyphicon glyphicon-search form-control-feedback"></span>
                     </div>

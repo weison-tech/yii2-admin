@@ -65,4 +65,6 @@ return [
     'Menu' => '菜单',
     'Help' => '帮助',
     'Application' => '应用',
+    'RBAC Manager' => '权限管理',
+    'search' => '搜索...',
 ];
