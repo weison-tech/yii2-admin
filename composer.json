@@ -1,11 +1,11 @@
 {
-    "name": "mdmsoft/yii2-admin",
+    "name": "weison-tech/yii2-admin",
     "description": "RBAC Auth manager for Yii2 ",
     "keywords": ["yii", "admin", "auth", "rbac", "angularjs", "rest"],
     "type": "yii2-extension",
     "license": "BSD-3-Clause",
     "support": {
-        "issues": "https://github.com/mdmsoft/yii2-admin/issues",
+        "issues": "https://github.com/weison/yii2-admin/issues",
         "source": "https://github.com/mdmsoft/yii2-admin"
     },
     "authors": [
