@@ -15,7 +15,7 @@ $controllerId = $this->context->uniqueId . '/';
 ?>
 <div class="user-view">
 
-    <h1><?= Html::encode($this->title) ?></h1>
+    <!-- <h1><?= Html::encode($this->title) ?></h1> -->
 
     <p>
         <?php
@@ -49,7 +49,10 @@ $controllerId = $this->context->uniqueId . '/';
             'username',
             'email:email',
             'created_at:date',
-            'status',
+            [
+                'attribute' => 'status',
+                'value' => $model->status == 0 ? Yii::t('rbac-admin', 'Inactive') : Yii::t('rbac-admin', 'Active'),
+            ],
         ],
     ])
     ?>

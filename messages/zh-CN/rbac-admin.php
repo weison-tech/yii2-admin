@@ -65,4 +65,13 @@ return [
     'Menu' => '菜单',
     'Help' => '帮助',
     'Application' => '应用',
+    'Email' => '邮箱',
+    'Create At' => '注册时间',
+    'Status' => '状态',
+    'Inactive' => '无效',
+    'Active' => '有效',
+    'Search for avaliable' => '搜索可用项',
+    'Search for assigned' => '搜索已分配项',
+    'Add' => '增加',
+    'New route(s)' => '新增路由',
 ];

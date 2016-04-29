@@ -189,4 +189,17 @@ class User extends ActiveRecord implements IdentityInterface
     {
         $this->password_reset_token = null;
     }
+
+    /**
+     * @inheritdoc
+     */
+    public function attributeLabels()
+    {
+        return [
+            'username' => Yii::t('rbac-admin', 'Username'),
+            'email' => Yii::t('rbac-admin', 'Email'),
+            'created_at' => Yii::t('rbac-admin', 'Create At'),
+            'status' => Yii::t('rbac-admin', 'Status'),
+        ];
+    }
 }
